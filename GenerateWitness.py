@@ -32,7 +32,6 @@ def main():
     
     N = int(input("Enter the rigid integer value: "))
     g = int(input("Enter the generator value: "))
-    a = int(input("Enter the accumulator value: "))
 
     # Map email IDs to prime elements
     prime_elements = [hash_to_prime(id) for id in member_ids]
