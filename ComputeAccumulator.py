@@ -26,7 +26,7 @@ def hash_to_prime(data):
         candidate += 1
     return candidate
 
-# Function to accumulate elements using the generator and modulus N
+# Function to accumulate elements using the base and modulus N
 def accumulate_elements(g, elements, N):
     product = 1
     # Compute the product of all elements
@@ -44,7 +44,7 @@ def main():
     N = p * q
     print(f"Computed the rigid integer value (product of safe primes): \n {N} \n")
     g = random.randint(2, N-1)
-    print(f"Selected generator: \n {g} \n")
+    print(f"Selected base value: \n {g} \n")
 
     # Read list of member ids
     with open('emails.txt') as f:

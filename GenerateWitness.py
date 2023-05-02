@@ -31,7 +31,7 @@ def main():
         member_ids = f.read().splitlines()
     
     N = int(input("Enter the rigid integer value: "))
-    g = int(input("Enter the generator value: "))
+    g = int(input("Enter the base value: "))
 
     # Map email IDs to prime elements
     prime_elements = [hash_to_prime(id) for id in member_ids]
